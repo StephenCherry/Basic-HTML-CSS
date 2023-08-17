@@ -1,0 +1,111 @@
+<!-- After creating the form page... I did the following implementation. However this simple form also interact with the 
+    backend API which is written in PHP.
+1. Inputting Text Fields into the form.(input Text Fields)
+2. I implement selecting Menus in the form.(Select Menus)
+3. Implementing the following buttons.(Check Boxes and Radio Buttons)
+4. Implementing of Texting Areas and its Buttons.(Text Areas and Buttons) -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <form name="Employment Form" action="send.php" method="post">
+        <table width="600" border="1" cellspacing="2" cellspacing="2">
+
+            <tr>
+                <td colspan="2">Employemnt Application</td>
+            </tr>
+        
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="firstname" maxlength="50"/></td>
+            </tr>
+
+            <tr>
+                <td>Middle Name</td>
+                <td><input type="text" name="middlename" maxlength="50"/></td>
+            </tr>
+        
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="lastname" maxlength="50"/></td>
+            </tr>
+        
+            <tr>
+                <td>Position</td>
+                <td>
+                    <select name="position">
+                    <option value="SE">Software Engineer</option>
+                    <option value="FM">Facility Manager</option>
+                    <option value="AC">Accountant</option>
+                    <option value="OA">Office Assistance</option>
+                    </select>
+
+                </td>
+            </tr>
+        
+            <tr>
+                <td>Experience</td>
+
+                <td>
+                    <select name="experience">
+                        <option value="EL">Entry Level</option>
+                        <option value="ML">Mid Level</option>
+                        <option value="VE">Very Experience</option>
+                    </select>
+                </td>
+
+            </tr>
+        
+            <tr>
+                <td>Job Type</td>
+
+                <td>
+                    <input type="checkbox" name="fulltime">Full-Time
+                    <input type="checkbox" name="partime">Partime
+                    <input type="checkbox" name="contract">Contract
+                    <input type="checkbox" name="intern">Internship Program
+
+                </td>
+            </tr>
+        
+            <tr>
+                <td>Employment Status</td>
+
+                <td>
+                    <input type="radio" name="estatus" value="employed"/>Employed
+                    <input type="radio" name="estatus" value="unemployed"/>UnEmployed
+                    <input type="radio" name="estatus" value="student"/>Student
+                    <input type="radio" name="estatus" value="training"/>Training
+                </td>
+                
+            </tr>
+        
+            <tr>
+                <td>Addition Comments</td>
+                <td><textarea name="Comments" id="1" cols="45" rows="10"></textarea>
+                </td>
+
+            </tr>
+        
+            <tr>
+                <td></td>
+
+                <td>
+                    <input type="submit" name="submit" value="Submit">
+                    <input type="reset" name="reset" value="Reset">
+
+                </td>
+            </tr>
+        
+        </table>
+    </form>
+</body>
+
+
+</html>
