@@ -1,0 +1,35 @@
+.videowrapper{
+    position: relative;
+    padding-bottom: 56.26%;
+    padding-top: 25px;
+    height: 0px;
+    }
+    
+    .videowrapper iframe{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        height: 100px;
+        width: 100px;
+        } 
+
+
+
+body{
+    background:cyan;
+}
+
+h1{
+    color: red;
+    text-align: center;
+}
+
+p{
+    font-family: Cambria;
+    font-size: 20px;
+    color: brown;
+}
+
+
+

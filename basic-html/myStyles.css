@@ -1,0 +1,104 @@
+#container{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em; /*This ensure that there is spacing between our perimeter content.*/
+}
+
+#header{
+    background: black;
+    font-family: Times New Roman;
+    height: 90px;
+    font-weight: bold;
+}
+
+#contentWrapper{
+    float: left;
+    width: 100%;
+}
+
+#contentColumn{
+    margin: 0 230px 0 230px;
+}
+
+#leftColumn{
+    float: left;
+    width: 230px;
+    margin-left: -100%; /*To ensure that the column stays on left position regardless of the browser size*/
+    background: #24c8ff;
+}
+
+#rightColumn{
+    float: right;
+    width: 230px;
+    margin-left: -230%; /*To ensure that the column stays on right position regardless of the browser size*/
+    background: #fffb00;
+}
+
+.innerText{
+    margin: 20px;
+    font-family: Arial;
+    color: #5E5E5E;
+}
+
+#footer{
+    clear: left; /*This is to ensure that it cannot float on left*/
+    width: 100%;
+    background: black;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 4px;
+}
+
+/* ### NAVIGATION BAR ###*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+li{
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li:last-child{
+    border-right: none;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active){
+    background-color: #808080;
+}
+
+.active{
+    background-color: #0099ff;
+}
+
+ /* ### RESPONSIVE LAYOUT CSS ###*/
+
+@media (min-width: 840px){ /*This drop right column to down when the screen size falls beloe 40px*/
+
+    #leftColumn{
+        margin-left: -100%;
+    }
+    
+    #rightColumn{
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        clear: both;
+    }
+
+    #contentColumn{
+    margin-right: 0;
+}
+}

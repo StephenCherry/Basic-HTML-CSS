@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Basic Classes & Spans</title>
+
+        <style type="text/css">
+            Body{
+                background: violet;
+                font-family: Arial;
+            }
+            h1, h2, h3, h4,h5{
+                font-family: Georgia;
+                color: red;
+            }
+
+     /* Let us define a class in our stylesheet which is refer to as Internal line styles*/
+            .blue_bold_text{
+                color: blue;
+                font-weight: bold;
+                font-size: medium;
+            }
+
+            .large_white_text{
+                font-size: large;
+                color: white;
+                font-weight: bold;
+            }
+
+            .normal_yellow_text{
+                font-weight: normal;
+                color: yellow;
+                font-size: medium;
+            }
+
+            .medium_green_text{
+                font-weight: medium;
+                color: green;
+            }
+
+            .strikethrough_text{
+                text-decoration: line-through;
+            }
+
+            .underline_text{
+                text-decoration: underline;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <table width="600" border="0" cellspacing="1" cellpadding="1">
+            <tr>
+                <td><h1>Heading 1 </h1></td>
+            </tr>
+
+            <tr>
+                <td class="blue_bold_text"><span class="large_white_text underline_text">Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Iure, 
+                    veritatis aliquid possimus consequuntur nam eius facilis magni fuga mollitia doloribus. 
+                    Explicabo quos temporibus numquam fugiat vero blanditiis earum dolor deserunt.</td>
+            </tr>
+
+        </table>
+
+        <table width="600" border="0" cellspacing="1" cellpadding="1">
+            <tr>
+                <td><h1>Heading 2 </h1></td>
+            </tr>
+
+            <tr>
+                <td class="blue_bold_text"> <span class="large_white_text">Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Iure, 
+                    veritatis aliquid possimus consequuntur nam eius facilis magni fuga mollitia doloribus. 
+                    Explicabo quos temporibus numquam fugiat vero blanditiis earum dolor deserunt.</td>
+            </tr>
+
+        </table>
+
+        <table width="600" border="0" cellspacing="1" cellpadding="1">
+            <tr>
+                <td><h1>Heading 3 </h1></td>
+            </tr>
+
+            <tr>
+                <td class="normal_yellow_text"><span class="strikethrough_text">Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Iure, 
+                    veritatis aliquid possimus consequuntur nam eius facilis magni fuga mollitia doloribus. 
+                    Explicabo quos temporibus numquam fugiat vero blanditiis earum dolor deserunt.</td>
+            </tr>
+
+        </table>
+
+        <table width="600" border="0" cellspacing="1" cellpadding="1">
+            <tr>
+                <td><h1>Heading 4 </h1></td>
+            </tr>
+
+            <tr>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, 
+                    veritatis aliquid possimus consequuntur nam eius facilis magni fuga mollitia doloribus. 
+                    Explicabo quos temporibus numquam fugiat vero blanditiis earum dolor deserunt.</td>
+            </tr>
+
+        </table>
+
+        <table width="600" border="0" cellspacing="1" cellpadding="1">
+            <tr>
+                <td><h1>Heading 5 </h1></td>
+            </tr>
+
+            <tr>
+                <td class="medium_green_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, 
+                    veritatis aliquid possimus consequuntur nam eius facilis magni fuga mollitia doloribus. 
+                    Explicabo quos temporibus numquam fugiat vero blanditiis earum dolor deserunt.</td>
+            </tr>
+
+        </table>
+
+    </body>
+</html>
