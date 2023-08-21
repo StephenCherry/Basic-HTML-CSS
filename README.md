@@ -1,4 +1,4 @@
-# AN ABSOLUTE BEGINNERTUTORIAL ON HTML & CSS for Beginners
+# AN ABSOLUTE BEGINNER TUTORIAL ON HTML & CSS for Beginners
 
 Welcome to my repository for the **HTML & CSS for Beginners**! This repository contains the code and materials I've worked on during the course to learn and practice Basic HTML and CSS.
 
